@@ -15,3 +15,21 @@ C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Deb
 C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.pdb
 C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.genruntimeconfig.cache
 C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\ref\Infraestrutura.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\bin\Debug\net8.0\Infraestrutura.deps.json
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\bin\Debug\net8.0\Infraestrutura.runtimeconfig.json
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\bin\Debug\net8.0\Infraestrutura.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\bin\Debug\net8.0\Infraestrutura.pdb
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\bin\Debug\net8.0\Dominio.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\bin\Debug\net8.0\Dominio.pdb
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraestrutura.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraestrutura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraestrutura.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraestrutura.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraestrutura.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraestrutura.sourcelink.json
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraest.A03DDDF3.Up2Date
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraestrutura.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\refint\Infraestrutura.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraestrutura.pdb
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraestrutura.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\ref\Infraestrutura.dll

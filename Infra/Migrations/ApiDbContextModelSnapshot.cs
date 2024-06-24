@@ -57,8 +57,8 @@ namespace Infraestrutura.Migrations
                     b.Property<int>("CategoriaId")
                         .HasColumnType("int");
 
-                    b.Property<DateOnly>("DataCadastro")
-                        .HasColumnType("date");
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
