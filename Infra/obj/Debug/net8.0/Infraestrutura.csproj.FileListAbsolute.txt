@@ -1,0 +1,17 @@
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Infraestrutura.deps.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Infraestrutura.runtimeconfig.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Infraestrutura.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Infraestrutura.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Dominio.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Dominio.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.csproj.AssemblyReference.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.GeneratedMSBuildEditorConfig.editorconfig
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.AssemblyInfoInputs.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.AssemblyInfo.cs
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.csproj.CoreCompileInputs.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.csproj.CopyComplete
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\refint\Infraestrutura.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.genruntimeconfig.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\ref\Infraestrutura.dll

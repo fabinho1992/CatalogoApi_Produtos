@@ -1,0 +1,11 @@
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\Servicos.deps.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\Servicos.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\Servicos.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\obj\Debug\net8.0\Servicos.GeneratedMSBuildEditorConfig.editorconfig
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\obj\Debug\net8.0\Servicos.AssemblyInfoInputs.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\obj\Debug\net8.0\Servicos.AssemblyInfo.cs
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\obj\Debug\net8.0\Servicos.csproj.CoreCompileInputs.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\obj\Debug\net8.0\Servicos.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\obj\Debug\net8.0\refint\Servicos.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\obj\Debug\net8.0\Servicos.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\obj\Debug\net8.0\ref\Servicos.dll
