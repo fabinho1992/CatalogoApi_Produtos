@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y7NXGYZs/Ck=",
+  "dgSpecHash": "1zkSH3GUnL2a6yhxlnD5L7jJ33yYFfXiMrX2lcmKBC72EkO21NEB0yA9kGN2B5MaKgasfUDKxT/XN4WTkCEvpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dominio.csproj",
+  "projectFilePath": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

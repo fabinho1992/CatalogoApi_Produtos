@@ -21,3 +21,4 @@ C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\Catalog
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Dominio\obj\Debug\net8.0\refint\Dominio.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Dominio\obj\Debug\net8.0\Dominio.pdb
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Dominio\obj\Debug\net8.0\ref\Dominio.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.sourcelink.json
