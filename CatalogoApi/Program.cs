@@ -1,6 +1,7 @@
 
 
 using APICatalogo.Extensions;
+using CatalogoApi.ExtensaoErros.Filtros;
 using Infraestrutura.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
@@ -9,8 +10,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers()
-    .AddJsonOptions(op => op.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);       
+builder.Services.AddControllers(opt =>
+{
+    opt.Filters.Add(typeof(ApiExceptionFilter));
+})
+    .AddJsonOptions(op => op.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
+
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
