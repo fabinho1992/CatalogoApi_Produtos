@@ -78,5 +78,6 @@ namespace CatalogoApi.Controllers
 
             return Ok("Categoria excluída!");
         }
+
     }
 }
