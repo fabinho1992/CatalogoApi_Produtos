@@ -922,8 +922,16 @@
         }
       },
       "Dominio/1.0.0": {
+        "dependencies": {
+          "Servicos": "1.0.0"
+        },
         "runtime": {
           "Dominio.dll": {}
+        }
+      },
+      "Servicos/1.0.0": {
+        "runtime": {
+          "Servicos.dll": {}
         }
       }
     }
@@ -1467,6 +1475,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Servicos/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1506,11 +1506,24 @@
       "Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Servicos": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Dominio.dll": {}
         },
         "runtime": {
           "bin/placeholder/Dominio.dll": {}
+        }
+      },
+      "Servicos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Servicos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Servicos.dll": {}
         }
       }
     }
@@ -4111,6 +4124,11 @@
       "type": "project",
       "path": "../Dominio/Dominio.csproj",
       "msbuildProject": "../Dominio/Dominio.csproj"
+    },
+    "Servicos/1.0.0": {
+      "type": "project",
+      "path": "../Servicos/Servicos.csproj",
+      "msbuildProject": "../Servicos/Servicos.csproj"
     }
   },
   "projectFileDependencyGroups": {

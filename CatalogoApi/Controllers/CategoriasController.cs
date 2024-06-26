@@ -42,10 +42,10 @@ namespace CatalogoApi.Controllers
         {
             try
             {
-                var categorias = await _context.Categorias.AsNoTracking().Include(c => c.Produtos).ToListAsync();
+                var categorias = await _context.Categorias.AsNoTracking().Take(10).Include(c => c.Produtos).ToListAsync();
                 if(categorias is null)
                 {
-                    return BadRequest("Categorias não encontradas...");
+                    return NotFound("Categorias não encontradas...");
                 }
                 return Ok(categorias);
             }
@@ -53,6 +53,30 @@ namespace CatalogoApi.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erroo ao processar sua solicitação!");
             }
+        }
+
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult> UpdateAsync(int id, Categoria request)
+        {
+            if(id != request.Id)
+            {
+                return BadRequest($"Categoria com o id= {id} não encontrado...");
+            }
+            _context.Entry(request).State = EntityState.Modified; 
+            await _context.SaveChangesAsync();
+            return Ok(request);
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var categoria = await _context.Categorias.FirstOrDefaultAsync(x => x.Id == id);
+            if (categoria is null) return NotFound("Categoria não encontrado....");
+
+            _context.Categorias.Remove(categoria);
+            await _context.SaveChangesAsync();
+
+            return Ok("Categoria excluída!");
         }
     }
 }

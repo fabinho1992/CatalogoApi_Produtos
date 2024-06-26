@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "Dominio/1.0.0": {
+        "dependencies": {
+          "Servicos": "1.0.0"
+        },
         "runtime": {
           "Dominio.dll": {}
+        }
+      },
+      "Servicos/1.0.0": {
+        "runtime": {
+          "Servicos.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Servicos/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

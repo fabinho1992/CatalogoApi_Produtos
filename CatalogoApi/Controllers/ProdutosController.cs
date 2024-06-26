@@ -67,7 +67,7 @@ namespace CatalogoApi.Controllers
             
         }
 
-        [HttpPut("{id:int}")]
+        [HttpPut("{id:int:min(1)}")]//faço um filtro no parametro, que só pode receber no minímoo um número 1
         public async Task<IActionResult> Update(int id, Produto request)
         {
             if(id != request.Id) return BadRequest($"Produto com o id= {id} não encontrado...");
