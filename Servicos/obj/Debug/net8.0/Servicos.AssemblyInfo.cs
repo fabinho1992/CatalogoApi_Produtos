@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Servicos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e97cd6fda32022bd75b0425659e889ecb244c3a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fc46652420fa0b39d8f178737a2eaf82abe568f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Servicos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Servicos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

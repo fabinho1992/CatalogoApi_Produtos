@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "urNEodOEweI=",
+  "dgSpecHash": "1zkSH3GUnL2a6yhxlnD5L7jJ33yYFfXiMrX2lcmKBC72EkO21NEB0yA9kGN2B5MaKgasfUDKxT/XN4WTkCEvpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dominio.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Dominio\\Dominio.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

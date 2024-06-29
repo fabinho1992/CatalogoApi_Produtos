@@ -2,7 +2,11 @@
 
 using APICatalogo.Extensions;
 using CatalogoApi.ExtensaoErros.Filtros;
+using CatalogoApi.Repository;
+using Dominio.Interfaces;
+using Dominio.Interfaces.Generic;
 using Infraestrutura.Data;
+using Infraestrutura.Repository.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
@@ -26,6 +30,11 @@ builder.Services.AddSwaggerGen();
 //DbContext
 var stringConexao = builder.Configuration.GetConnectionString("StringDefault");
 builder.Services.AddDbContext<ApiDbContext>(opt => opt.UseSqlServer(stringConexao));
+
+//Injeção de dependência
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(RepositoryBase<>));
 
 var app = builder.Build();
 
