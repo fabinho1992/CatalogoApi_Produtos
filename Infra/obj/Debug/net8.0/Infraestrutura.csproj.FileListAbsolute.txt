@@ -34,7 +34,5 @@ C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\Catalog
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraestrutura.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\ref\Infraestrutura.dll
 C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.sourcelink.json
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Servicos.dll
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Servicos.pdb
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\bin\Debug\net8.0\Servicos.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\bin\Debug\net8.0\Servicos.pdb

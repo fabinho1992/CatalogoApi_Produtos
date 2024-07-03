@@ -1,4 +1,8 @@
-﻿using Dominio.Modelos;
+﻿using AutoMapper;
+using Dominio.Dtos.CategoriaDto;
+using Dominio.Interfaces;
+using Dominio.Interfaces.Generic;
+using Dominio.Modelos;
 using Infraestrutura.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,15 +14,17 @@ namespace CatalogoApi.Controllers
     [ApiController]
     public class CategoriasController : ControllerBase
     {
-        private readonly ApiDbContext _context;
+        private readonly IUnitToWork _repository;
+        private readonly IMapper _mapper;
 
-        public CategoriasController(ApiDbContext context)
+        public CategoriasController(IUnitToWork repository, IMapper mapper)
         {
-            _context = context;
+            _repository = repository;
+            _mapper = mapper;
         }
 
         [HttpPost]
-        public async Task<ActionResult> Create(Categoria categoria)
+        public async Task<ActionResult> Create(CategoriaRequest categoria)
         {
             try
             {
@@ -27,8 +33,9 @@ namespace CatalogoApi.Controllers
                     return BadRequest();
                 }
 
-                await _context.Categorias.AddAsync(categoria);
-                await _context.SaveChangesAsync();
+                var categoriaDto = _mapper.Map<Categoria>(categoria);
+                await _repository.CategoriaRepository.Create(categoriaDto);
+                await _repository.Commit();
                 return Ok(categoria);
             }
             catch (Exception)
@@ -38,21 +45,35 @@ namespace CatalogoApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Categoria>>> GetAll()
+        public async Task<ActionResult<IEnumerable<CategoriaResponse>>> GetAll()
         {
             try
             {
-                var categorias = await _context.Categorias.AsNoTracking().Take(10).Include(c => c.Produtos).ToListAsync();
-                if(categorias is null)
+                var categorias = await _repository.CategoriaRepository.GetAll();
+                if (categorias is null)
                 {
                     return NotFound("Categorias não encontradas...");
                 }
-                return Ok(categorias);
+                var categoriasDto = _mapper.Map<IEnumerable<CategoriaResponse>>(categorias);
+                return Ok(categoriasDto);
             }
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erroo ao processar sua solicitação!");
             }
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult> GetById(int id)
+        {
+            var categoria = await _repository.CategoriaRepository.Get(c => c.Id == id);
+            if (categoria is null)
+            {
+                return BadRequest($"Categoria com o id= {id} não encontrado...");
+            }
+
+            var categoriaDto = _mapper.Map<CategoriaResponse>(categoria);
+            return Ok(categoriaDto);
         }
 
         [HttpPut("{id:int}")]
@@ -62,20 +83,23 @@ namespace CatalogoApi.Controllers
             {
                 return BadRequest($"Categoria com o id= {id} não encontrado...");
             }
-            _context.Entry(request).State = EntityState.Modified; 
-            await _context.SaveChangesAsync();
+            
+            await _repository.CategoriaRepository.Update(request);
+            await _repository.Commit();
             return Ok(request);
         }
 
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var categoria = await _context.Categorias.FirstOrDefaultAsync(x => x.Id == id);
-            if (categoria is null) return NotFound("Categoria não encontrado....");
+            var categoria = await _repository.CategoriaRepository.Get(c => c.Id == id);
+            if (categoria is null) 
+            {
+                return NotFound("Categoria não encontrado....");
+            } 
 
-            _context.Categorias.Remove(categoria);
-            await _context.SaveChangesAsync();
-
+            await _repository.CategoriaRepository.Delete(categoria);
+            await _repository.Commit();
             return Ok("Categoria excluída!");
         }
 

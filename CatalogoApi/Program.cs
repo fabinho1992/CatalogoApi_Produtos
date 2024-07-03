@@ -6,6 +6,7 @@ using CatalogoApi.Repository;
 using Dominio.Interfaces;
 using Dominio.Interfaces.Generic;
 using Infraestrutura.Data;
+using Infraestrutura.Profiles.CategoriasProfile;
 using Infraestrutura.Repository.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
@@ -35,6 +36,11 @@ builder.Services.AddDbContext<ApiDbContext>(opt => opt.UseSqlServer(stringConexa
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(RepositoryBase<>));
+builder.Services.AddScoped<IUnitToWork, UnitToWork>();
+
+//AutoMapper
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 
 var app = builder.Build();
 

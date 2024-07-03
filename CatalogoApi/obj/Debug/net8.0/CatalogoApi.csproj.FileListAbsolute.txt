@@ -280,7 +280,6 @@ C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\Catalog
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\obj\Debug\net8.0\CatalogoApi.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\obj\Debug\net8.0\ref\CatalogoApi.dll
 C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\CatalogoApi\obj\Debug\net8.0\CatalogoApi.sourcelink.json
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\CatalogoApi\bin\Debug\net8.0\Servicos.dll
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\CatalogoApi\bin\Debug\net8.0\Servicos.pdb
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\Servicos.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\Servicos.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\CatalogoApi\bin\Debug\net8.0\AutoMapper.dll

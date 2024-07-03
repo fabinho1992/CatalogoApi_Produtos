@@ -15,9 +15,9 @@ namespace Infraestrutura.Repository.Repositories
     {
         public ProdutoRepository(ApiDbContext context) : base(context) { }
 
-        public async Task<IEnumerable<Produto>> GetProdutosPorCategoria(int id)
+        public async Task<IEnumerable<Produto>> GetProdutosPorCategoria(string nome)
         {
-            return await _context.Produtos.Where(c => c.CategoriaId == id).ToListAsync();
+            return await _context.Produtos.Where(c => c.Categoria.Nome.ToUpper() == nome.ToUpper()).Include(c => c.Categoria).ToListAsync();
         }
     }
 }

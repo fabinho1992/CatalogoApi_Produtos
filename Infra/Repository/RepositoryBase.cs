@@ -17,14 +17,14 @@ namespace CatalogoApi.Repository
         public async Task<T> Create(T entity)
         {
             await _context.Set<T>().AddAsync(entity);
-            await _context.SaveChangesAsync();
+            //await _context.SaveChangesAsync();
             return entity;
         }
 
         public async Task Delete(T entity)
         {
             _context.Set<T>().Remove(entity);
-            await _context.SaveChangesAsync();
+            //await _context.SaveChangesAsync();
         }
 
         public async Task<T?> Get(Expression<Func<T, bool>> predicate)
@@ -34,13 +34,13 @@ namespace CatalogoApi.Repository
 
         public async Task<IEnumerable<T>> GetAll()
         {
-            return await _context.Set<T>().ToListAsync();
+            return await _context.Set<T>().AsNoTracking().Take(10).ToListAsync();
         }
 
         public async Task<T> Update(T entity)
         {
             _context.Set<T>().Update(entity);
-            await _context.SaveChangesAsync();
+            //await _context.SaveChangesAsync();
             return entity;
         }
     }

@@ -1,4 +1,4 @@
-﻿using Servicos.Validacao;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -20,6 +20,6 @@ namespace Dominio.Modelos
         public int Id { get; set; }
         public string? Nome { get; set; }
         public string? ImagemUrl { get; set; }
-        public ICollection<Produto>? Produtos { get; set; } 
+        public ICollection<Produto>? Produtos { get; set; }  
     }
 }

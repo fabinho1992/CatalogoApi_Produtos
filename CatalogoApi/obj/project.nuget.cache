@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/koCuxOq4K/W/ZTuMNUJvpwXoLQLaeS/pP5e3UC4qcwzMu0zuKqGfF32RvsLuWEIpxDGjkUGdfx/Eh/5Sbty3g==",
+  "dgSpecHash": "eQPXVM6edHMt4owVzKCGYLlYzzI2BD7ASZnZlAcR2PBAgUfzkkfBjmXH5IUa491ho2acLB3mCVZrXOeZPveCsQ==",
   "success": true,
   "projectFilePath": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\CatalogoApi\\CatalogoApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\adm\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\adm\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

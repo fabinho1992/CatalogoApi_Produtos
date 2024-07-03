@@ -1,4 +1,4 @@
-﻿using Servicos.Validacao;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -19,11 +19,10 @@ namespace Dominio.Modelos
         public string? Descricao { get; set;}
         public float Estoque { get; set; }
         public string? ImagemUrl { get; set; }
-        [JsonIgnore]
         public DateTime DataCadastro { get; set; } = DateTime.Now;
         public int CategoriaId { get; set; }
-        [JsonIgnore]
-        public Categoria? Categoria { get; set; }
+        public virtual Categoria? Categoria { get; set; }
 
+        
     }
 }

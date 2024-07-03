@@ -1,4 +1,7 @@
-﻿using Dominio.Modelos;
+﻿using AutoMapper;
+using Dominio.Dtos.ProdutoDto;
+using Dominio.Interfaces;
+using Dominio.Modelos;
 using Infraestrutura.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,11 +14,13 @@ namespace CatalogoApi.Controllers
     [ApiController]
     public class ProdutosController : ControllerBase
     {
-        private readonly ApiDbContext _context;
+        private readonly IUnitToWork _repository;
+        private readonly IMapper _mapper;
 
-        public ProdutosController(ApiDbContext context)
+        public ProdutosController(IUnitToWork repository, IMapper mapper)
         {
-            _context = context;
+            _repository = repository;
+            _mapper = mapper;
         }
 
         [HttpPost]
@@ -23,15 +28,18 @@ namespace CatalogoApi.Controllers
         {
             try
             {
-                if (produto is null) return BadRequest();
-                await _context.Produtos.AddAsync(produto);
-                await _context.SaveChangesAsync();
+                if (produto is null) 
+                {
+                    return BadRequest();
+                }
 
+                await _repository.ProdutoRepository.Create(produto);
+                await _repository.Commit();
                 return Ok(produto);
             }
             catch (Exception)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erroo ao processar sua solicitação!");
+                return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erro ao processar sua solicitação!");
             }
         }
 
@@ -40,25 +48,34 @@ namespace CatalogoApi.Controllers
         {
             try
             {
-                var produtos = await _context.Produtos.AsNoTracking().Take(10).ToListAsync();
-                if (produtos is null) return NotFound("Produtos não encontrados..");
+                var produtos = await _repository.ProdutoRepository.GetAll();
+                if (produtos is null) 
+                {
+                    return NotFound("Produtos não encontrados..");
+                }
+
                 return Ok(produtos);
-            }
+        }
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erroo ao processar sua solicitação!");
             }
-            
-        }
+
+}
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<Produto>> GetById(int id)
+        public async Task<ActionResult<ProdutoResponse>> GetById(int id)
         {
             try
             {
-                var produto = await _context.Produtos.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
-                if (produto is null) return NotFound("$Produto com o id= {id} não encontrado...");
-                return Ok(produto);
+                var produto = await _repository.ProdutoRepository.Get(p => p.Id == id);
+                if (produto is null) 
+                {
+                    return NotFound("$Produto com o id= {id} não encontrado...");
+                }
+                
+                var produtoDto = _mapper.Map<ProdutoResponse>(produto);
+                return Ok(produtoDto);
             }
             catch (Exception)
             {
@@ -67,25 +84,43 @@ namespace CatalogoApi.Controllers
             
         }
 
-        [HttpPut("{id:int:min(1)}")]//faço um filtro no parametro, que só pode receber no minímoo um número 1
+        [HttpGet("PorCategoria/{nome}")]
+        public async Task<IActionResult> GetPorCategoria(string nome)
+        {
+            var produto = await _repository.ProdutoRepository.GetProdutosPorCategoria(nome);
+            if (produto is null)
+            {
+                return NotFound("Produto não encontrado!");
+            }
+
+            var produtoDto = _mapper.Map<IEnumerable<ProdutoResponsePorCategoria>>(produto);
+            return Ok(produtoDto);
+        }
+
+        [HttpPut("{id:int:min(1)}")]//faço um filtro no parametro, que só pode receber no minímo um número 1
         public async Task<IActionResult> Update(int id, Produto request)
         {
-            if(id != request.Id) return BadRequest($"Produto com o id= {id} não encontrado...");
+            if (id != request.Id) 
+            {
+                return BadRequest($"Produto com o id= {id} não encontrado...");
+            } 
 
-            _context.Entry(request).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
+            await _repository.ProdutoRepository.Update(request);
+            await _repository.Commit();
             return Ok(request);
         }
 
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var produto = await _context.Produtos.FirstOrDefaultAsync(x => x.Id == id);
-            if (produto is null) return NotFound("Produto não encontrado....");
+            var produto = await _repository.ProdutoRepository.Get(p => p.Id == id);
+            if (produto is null) 
+            {
+                return NotFound("Produto não encontrado....");
+            }
 
-            _context.Produtos.Remove(produto);
-            await _context.SaveChangesAsync();
-
+            await _repository.ProdutoRepository.Delete(produto);
+            await _repository.Commit();
             return Ok("Produto excluído!");
         }
     }
