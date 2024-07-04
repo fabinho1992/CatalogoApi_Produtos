@@ -19,7 +19,8 @@ builder.Services.AddControllers(opt =>
 {
     opt.Filters.Add(typeof(ApiExceptionFilter));
 })
-    .AddJsonOptions(op => op.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+    .AddJsonOptions(op => op.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles)
+    .AddNewtonsoftJson();
 
 
 
@@ -32,7 +33,7 @@ builder.Services.AddSwaggerGen();
 var stringConexao = builder.Configuration.GetConnectionString("StringDefault");
 builder.Services.AddDbContext<ApiDbContext>(opt => opt.UseSqlServer(stringConexao));
 
-//Injeção de dependência
+//Injeï¿½ï¿½o de dependï¿½ncia
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(RepositoryBase<>));

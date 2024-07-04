@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
+using Azure;
 using Dominio.Dtos.ProdutoDto;
 using Dominio.Interfaces;
 using Dominio.Modelos;
 using Infraestrutura.Data;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
@@ -24,7 +26,7 @@ namespace CatalogoApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Produto produto)
+        public async Task<IActionResult> Create(ProdutoRequest produto)
         {
             try
             {
@@ -33,7 +35,8 @@ namespace CatalogoApi.Controllers
                     return BadRequest();
                 }
 
-                await _repository.ProdutoRepository.Create(produto);
+                var produtoDto = _mapper.Map<Produto>(produto);
+                await _repository.ProdutoRepository.Create(produtoDto);
                 await _repository.Commit();
                 return Ok(produto);
             }
@@ -108,6 +111,36 @@ namespace CatalogoApi.Controllers
             await _repository.ProdutoRepository.Update(request);
             await _repository.Commit();
             return Ok(request);
+        }
+
+        [HttpPatch("{id}")]
+        public async Task<ActionResult<ProdutoResponse>> UpdateParcial(int id, JsonPatchDocument<ProdutoUpdateRequest> produtoPatchDto)
+        {
+            if (produtoPatchDto is null || id <= 0)
+            {
+                return BadRequest();
+            }
+
+            var produto = await _repository.ProdutoRepository.Get(c => c.Id == id);
+            if(produto is null)
+            {
+                return NotFound($"Produto com o id= {id} não encontrado...");
+            }
+
+            var produtoUpdate = _mapper.Map<ProdutoUpdateRequest>(produto);
+
+            produtoPatchDto.ApplyTo(produtoUpdate, ModelState);
+            //if(!ModelState.IsValid || TryValidateModel(produtoUpdate))
+            //{
+            //    return BadRequest(ModelState);
+            //}
+
+            _mapper.Map(produtoUpdate, produto);
+            await _repository.ProdutoRepository.Update(produto);
+            await _repository.Commit();
+
+            return Ok();
+
         }
 
         [HttpDelete("{id:int}")]
