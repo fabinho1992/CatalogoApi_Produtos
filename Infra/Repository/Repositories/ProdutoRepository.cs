@@ -19,5 +19,16 @@ namespace Infraestrutura.Repository.Repositories
         {
             return await _context.Produtos.Where(c => c.Categoria.Nome.ToUpper() == nome.ToUpper()).Include(c => c.Categoria).ToListAsync();
         }
+
+        public async Task<IEnumerable<Produto>> GetProdutoPaginado(ProdutoPaginado produtoPaginado)
+        {
+            var produtos = await _context.Produtos
+                .OrderBy(p => p.Nome)
+                .Skip((produtoPaginado.PageNumber - 1) * produtoPaginado.PageSize)
+                .Take(produtoPaginado.PageSize)
+                .ToListAsync();
+
+            return produtos;
+        }
     }
 }

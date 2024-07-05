@@ -286,3 +286,7 @@ C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\Catalog
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\CatalogoApi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\CatalogoApi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\CatalogoApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\CatalogoApi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

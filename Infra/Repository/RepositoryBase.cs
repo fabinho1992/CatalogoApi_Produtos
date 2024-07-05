@@ -34,7 +34,7 @@ namespace CatalogoApi.Repository
 
         public async Task<IEnumerable<T>> GetAll()
         {
-            return await _context.Set<T>().AsNoTracking().Take(10).ToListAsync();
+            return await _context.Set<T>().AsNoTracking().ToListAsync();
         }
 
         public async Task<T> Update(T entity)

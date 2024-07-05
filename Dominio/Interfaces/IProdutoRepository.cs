@@ -10,6 +10,7 @@ namespace Dominio.Interfaces
 {
     public interface IProdutoRepository : IRepository<Produto>
     {
+        Task<IEnumerable<Produto>> GetProdutoPaginado(ProdutoPaginado produtoPaginado);
         Task<IEnumerable<Produto>> GetProdutosPorCategoria(string nome);
     }
 }

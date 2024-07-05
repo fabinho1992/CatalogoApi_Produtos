@@ -100,6 +100,18 @@ namespace CatalogoApi.Controllers
             return Ok(produtoDto);
         }
 
+        [HttpGet("Paginados")]
+        public async Task<ActionResult<IEnumerable<ProdutoResponse>>> GetPaginado([FromQuery] ProdutoPaginado produtoPaginado)
+        {
+            var produtos = await _repository.ProdutoRepository.GetProdutoPaginado(produtoPaginado);
+            if(produtos is null)
+            {
+                return NotFound($"Produtos não encontrados...");
+            }
+
+            return Ok(produtos);
+        }
+
         [HttpPut("{id:int:min(1)}")]//faço um filtro no parametro, que só pode receber no minímo um número 1
         public async Task<IActionResult> Update(int id, Produto request)
         {
@@ -130,10 +142,10 @@ namespace CatalogoApi.Controllers
             var produtoUpdate = _mapper.Map<ProdutoUpdateRequest>(produto);
 
             produtoPatchDto.ApplyTo(produtoUpdate, ModelState);
-            //if(!ModelState.IsValid || TryValidateModel(produtoUpdate))
-            //{
-            //    return BadRequest(ModelState);
-            //}
+            if (!ModelState.IsValid )
+            {
+                return BadRequest(ModelState);
+            }
 
             _mapper.Map(produtoUpdate, produto);
             await _repository.ProdutoRepository.Update(produto);
