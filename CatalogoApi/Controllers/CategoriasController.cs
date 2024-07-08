@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using Dominio.Dtos.CategoriaDto;
+using Dominio.Dtos.ProdutoDto;
 using Dominio.Interfaces;
 using Dominio.Interfaces.Generic;
-using Dominio.Modelos;
+using Dominio.Modelos.Categorias;
+using Dominio.Modelos.Produtos;
 using Infraestrutura.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -74,6 +76,32 @@ namespace CatalogoApi.Controllers
 
             var categoriaDto = _mapper.Map<CategoriaResponse>(categoria);
             return Ok(categoriaDto);
+        }
+
+        [HttpGet("Paginados")]
+        public async Task<ActionResult<IEnumerable<CategoriaResponse>>> GetPaginado([FromQuery] CategoriaPaginado categoriaPaginado)
+        {
+            var categorias = await _repository.CategoriaRepository.GetCategoriaPaginado(categoriaPaginado);
+            if (categorias is null)
+            {
+                return NotFound($"Produtos não encontrados...");
+            }
+
+            var categoriasDto = _mapper.Map<IEnumerable<CategoriaResponse>>(categorias);
+            return Ok(categoriasDto);
+        }
+
+        [HttpGet("CategoriaPorNome")]
+        public async Task<ActionResult<IEnumerable<CategoriaResponse>>> GetPorNome([FromQuery] CategoriaPorNome categoriaPorNome)
+        {
+            var categorias = await _repository.CategoriaRepository.GetCategoriaPorNome(categoriaPorNome);
+            if (categorias is null)
+            {
+                return NotFound($"Produtos não encontrados...");
+            }
+
+            var categoriasDto = _mapper.Map<IEnumerable<CategoriaResponse>>(categorias);
+            return Ok(categoriasDto);
         }
 
         [HttpPut("{id:int}")]

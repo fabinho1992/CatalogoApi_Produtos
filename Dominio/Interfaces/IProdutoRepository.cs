@@ -1,5 +1,6 @@
 ﻿using Dominio.Interfaces.Generic;
-using Dominio.Modelos;
+using Dominio.Modelos.Categorias;
+using Dominio.Modelos.Produtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,6 @@ namespace Dominio.Interfaces
     {
         Task<IEnumerable<Produto>> GetProdutoPaginado(ProdutoPaginado produtoPaginado);
         Task<IEnumerable<Produto>> GetProdutosPorCategoria(string nome);
+        Task<IEnumerable<Produto>> GetProdutoPorPreco(ProdutoPorPreco produtoPorPreco);
     }
 }

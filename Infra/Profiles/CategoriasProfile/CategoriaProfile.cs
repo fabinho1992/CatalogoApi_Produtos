@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Dominio.Dtos.CategoriaDto;
-using Dominio.Modelos;
+using Dominio.Modelos.Categorias;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace Infraestrutura.Profiles.CategoriasProfile
         public CategoriaProfile() 
         {
             CreateMap<Categoria, CategoriaRequest>().ReverseMap();
-            CreateMap<Categoria, CategoriaResponse>().ForMember(c => c.Produtos, opt => opt.MapFrom(c => c.Produtos)).ReverseMap();
+            CreateMap<Categoria, CategoriaResponse>().ReverseMap();
         }
     }
 }

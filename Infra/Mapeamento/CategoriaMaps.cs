@@ -1,4 +1,4 @@
-﻿using Dominio.Modelos;
+﻿using Dominio.Modelos.Categorias;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;

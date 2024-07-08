@@ -14,7 +14,7 @@ namespace Dominio.Dtos.CategoriaDto
         public int Id { get; set; }
         public string? Nome { get; set; }
         public string? ImagemUrl { get; set; }
-        public ICollection<ProdutoResponse>? Produtos { get; set; }
+        //public ICollection<ProdutoResponse>? Produtos { get; set; }
 
     }
 }

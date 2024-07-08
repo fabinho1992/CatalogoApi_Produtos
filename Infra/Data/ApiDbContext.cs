@@ -1,4 +1,5 @@
-﻿using Dominio.Modelos;
+﻿using Dominio.Modelos.Categorias;
+using Dominio.Modelos.Produtos;
 using Infraestrutura.Mapeamento;
 using Microsoft.EntityFrameworkCore;
 using System;

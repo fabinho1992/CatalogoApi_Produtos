@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using Dominio.Modelos.Produtos;
 
-namespace Dominio.Modelos
+namespace Dominio.Modelos.Categorias
 {
     public class Categoria
     {
@@ -20,6 +21,6 @@ namespace Dominio.Modelos
         public int Id { get; set; }
         public string? Nome { get; set; }
         public string? ImagemUrl { get; set; }
-        public ICollection<Produto>? Produtos { get; set; }  
+        public ICollection<Produto>? Produtos { get; set; }
     }
 }

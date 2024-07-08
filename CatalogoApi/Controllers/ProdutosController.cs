@@ -2,7 +2,7 @@
 using Azure;
 using Dominio.Dtos.ProdutoDto;
 using Dominio.Interfaces;
-using Dominio.Modelos;
+using Dominio.Modelos.Produtos;
 using Infraestrutura.Data;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
@@ -30,7 +30,7 @@ namespace CatalogoApi.Controllers
         {
             try
             {
-                if (produto is null) 
+                if (produto is null)
                 {
                     return BadRequest();
                 }
@@ -52,19 +52,19 @@ namespace CatalogoApi.Controllers
             try
             {
                 var produtos = await _repository.ProdutoRepository.GetAll();
-                if (produtos is null) 
+                if (produtos is null)
                 {
                     return NotFound("Produtos não encontrados..");
                 }
 
                 return Ok(produtos);
-        }
+            }
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erroo ao processar sua solicitação!");
             }
 
-}
+        }
 
         [HttpGet("{id:int}")]
         public async Task<ActionResult<ProdutoResponse>> GetById(int id)
@@ -72,11 +72,11 @@ namespace CatalogoApi.Controllers
             try
             {
                 var produto = await _repository.ProdutoRepository.Get(p => p.Id == id);
-                if (produto is null) 
+                if (produto is null)
                 {
                     return NotFound("$Produto com o id= {id} não encontrado...");
                 }
-                
+
                 var produtoDto = _mapper.Map<ProdutoResponse>(produto);
                 return Ok(produtoDto);
             }
@@ -84,7 +84,7 @@ namespace CatalogoApi.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erroo ao processar sua solicitação!");
             }
-            
+
         }
 
         [HttpGet("PorCategoria/{nome}")]
@@ -104,13 +104,28 @@ namespace CatalogoApi.Controllers
         public async Task<ActionResult<IEnumerable<ProdutoResponse>>> GetPaginado([FromQuery] ProdutoPaginado produtoPaginado)
         {
             var produtos = await _repository.ProdutoRepository.GetProdutoPaginado(produtoPaginado);
-            if(produtos is null)
+            if (produtos is null)
             {
                 return NotFound($"Produtos não encontrados...");
             }
 
-            return Ok(produtos);
+            var produtosDto = _mapper.Map<IEnumerable<ProdutoResponse>>(produtos);
+            return Ok(produtosDto);
         }
+
+        [HttpGet("PorPreco")]
+        public async Task<ActionResult<IEnumerable<ProdutoResponse>>> GetPorPreco([FromQuery] ProdutoPorPreco produtoPorPreco)
+        {
+            var produtos = await _repository.ProdutoRepository.GetProdutoPorPreco(produtoPorPreco);
+            if (produtos is null)
+            {
+                return NotFound($"Produtos não encontrados...");
+            }
+
+            var produtosDto = _mapper.Map<IEnumerable<ProdutoResponse>>(produtos);
+            return Ok(produtosDto);
+        }
+
 
         [HttpPut("{id:int:min(1)}")]//faço um filtro no parametro, que só pode receber no minímo um número 1
         public async Task<IActionResult> Update(int id, Produto request)
@@ -118,7 +133,7 @@ namespace CatalogoApi.Controllers
             if (id != request.Id) 
             {
                 return BadRequest($"Produto com o id= {id} não encontrado...");
-            } 
+            }
 
             await _repository.ProdutoRepository.Update(request);
             await _repository.Commit();

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Dominio.Dtos.ProdutoDto;
-using Dominio.Modelos;
+using Dominio.Modelos.Produtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
