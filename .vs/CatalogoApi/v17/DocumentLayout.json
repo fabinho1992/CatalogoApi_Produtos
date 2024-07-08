@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9D37A3F-B2CB-4166-BC6C-31D4C01A060D}|CatalogoApi\\CatalogoApi.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\catalogoapi\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9D37A3F-B2CB-4166-BC6C-31D4C01A060D}|CatalogoApi\\CatalogoApi.csproj|solutionrelative:catalogoapi\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E0BBCB7-4785-4A7F-941D-883670A6F92C}|Infra\\Infraestrutura.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\infra\\repository\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E0BBCB7-4785-4A7F-941D-883670A6F92C}|Infra\\Infraestrutura.csproj|solutionrelative:infra\\repository\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E0BBCB7-4785-4A7F-941D-883670A6F92C}|Infra\\Infraestrutura.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\infra\\profiles\\produtoprofile\\produtoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E0BBCB7-4785-4A7F-941D-883670A6F92C}|Infra\\Infraestrutura.csproj|solutionrelative:infra\\profiles\\produtoprofile\\produtoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF2C2769-7542-44FA-9DFF-1C2E01294371}|Dominio\\Dominio.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\dominio\\modelos\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF2C2769-7542-44FA-9DFF-1C2E01294371}|Dominio\\Dominio.csproj|solutionrelative:dominio\\modelos\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF2C2769-7542-44FA-9DFF-1C2E01294371}|Dominio\\Dominio.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\dominio\\dtos\\produtodto\\produtoupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF2C2769-7542-44FA-9DFF-1C2E01294371}|Dominio\\Dominio.csproj|solutionrelative:dominio\\dtos\\produtodto\\produtoupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF2C2769-7542-44FA-9DFF-1C2E01294371}|Dominio\\Dominio.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\dominio\\dtos\\produtodto\\produtorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF2C2769-7542-44FA-9DFF-1C2E01294371}|Dominio\\Dominio.csproj|solutionrelative:dominio\\dtos\\produtodto\\produtorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E0BBCB7-4785-4A7F-941D-883670A6F92C}|Infra\\Infraestrutura.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\infra\\repository\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E0BBCB7-4785-4A7F-941D-883670A6F92C}|Infra\\Infraestrutura.csproj|solutionrelative:infra\\repository\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9D37A3F-B2CB-4166-BC6C-31D4C01A060D}|CatalogoApi\\CatalogoApi.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\catalogoapi\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9D37A3F-B2CB-4166-BC6C-31D4C01A060D}|CatalogoApi\\CatalogoApi.csproj|solutionrelative:catalogoapi\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9D37A3F-B2CB-4166-BC6C-31D4C01A060D}|CatalogoApi\\CatalogoApi.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\catalogoapi\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9D37A3F-B2CB-4166-BC6C-31D4C01A060D}|CatalogoApi\\CatalogoApi.csproj|solutionrelative:catalogoapi\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BF2C2769-7542-44FA-9DFF-1C2E01294371}|Dominio\\Dominio.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\dominio\\dtos\\produtodto\\produtorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF2C2769-7542-44FA-9DFF-1C2E01294371}|Dominio\\Dominio.csproj|solutionrelative:dominio\\dtos\\produtodto\\produtorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF2C2769-7542-44FA-9DFF-1C2E01294371}|Dominio\\Dominio.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\dominio\\dtos\\produtodto\\produtoupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF2C2769-7542-44FA-9DFF-1C2E01294371}|Dominio\\Dominio.csproj|solutionrelative:dominio\\dtos\\produtodto\\produtoupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF2C2769-7542-44FA-9DFF-1C2E01294371}|Dominio\\Dominio.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\dominio\\interfaces\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF2C2769-7542-44FA-9DFF-1C2E01294371}|Dominio\\Dominio.csproj|solutionrelative:dominio\\interfaces\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E9D37A3F-B2CB-4166-BC6C-31D4C01A060D}|CatalogoApi\\CatalogoApi.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\catalogoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E9D37A3F-B2CB-4166-BC6C-31D4C01A060D}|CatalogoApi\\CatalogoApi.csproj|solutionrelative:catalogoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E0BBCB7-4785-4A7F-941D-883670A6F92C}|Infra\\Infraestrutura.csproj|c:\\users\\usuario\\desktop\\cursos de programa\u00E7\u00E3o\\cursosudemy\\catalogoapi\\catalogoapi_produtos\\infra\\repository\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E0BBCB7-4785-4A7F-941D-883670A6F92C}|Infra\\Infraestrutura.csproj|solutionrelative:infra\\repository\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Modelos\\Produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Dominio\\Modelos\\Produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,19 +50,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Modelos\\Produto.cs",
-              "RelativeDocumentMoniker": "Dominio\\Modelos\\Produto.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Modelos\\Produto.cs",
-              "RelativeToolTip": "Dominio\\Modelos\\Produto.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAABUAAABCAAAA",
+              "DocumentIndex": 0,
+              "Title": "ProdutoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Infra\\Repository\\Repositories\\ProdutoRepository.cs",
+              "RelativeDocumentMoniker": "Infra\\Repository\\Repositories\\ProdutoRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Infra\\Repository\\Repositories\\ProdutoRepository.cs",
+              "RelativeToolTip": "Infra\\Repository\\Repositories\\ProdutoRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T18:56:37.847Z"
+              "WhenOpened": "2024-07-08T14:14:41.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProdutoRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dtos\\ProdutoDto\\ProdutoRequest.cs",
+              "RelativeDocumentMoniker": "Dominio\\Dtos\\ProdutoDto\\ProdutoRequest.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dtos\\ProdutoDto\\ProdutoRequest.cs",
+              "RelativeToolTip": "Dominio\\Dtos\\ProdutoDto\\ProdutoRequest.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T14:10:57.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "CatalogoApi\\Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "CatalogoApi\\Controllers\\ProdutosController.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T19:16:23.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProdutoUpdateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dtos\\ProdutoDto\\ProdutoUpdateRequest.cs",
+              "RelativeDocumentMoniker": "Dominio\\Dtos\\ProdutoDto\\ProdutoUpdateRequest.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dtos\\ProdutoDto\\ProdutoUpdateRequest.cs",
+              "RelativeToolTip": "Dominio\\Dtos\\ProdutoDto\\ProdutoUpdateRequest.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:48:50.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "CatalogoApi\\Controllers\\CategoriasController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "CatalogoApi\\Controllers\\CategoriasController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAAC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T15:05:30.453Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -66,68 +127,21 @@
               "RelativeToolTip": "Infra\\Profiles\\ProdutoProfile\\ProdutoProfile.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T18:52:56.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProdutoUpdateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dtos\\ProdutoDto\\ProdutoUpdateRequest.cs",
-              "RelativeDocumentMoniker": "Dominio\\Dtos\\ProdutoDto\\ProdutoUpdateRequest.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dtos\\ProdutoDto\\ProdutoUpdateRequest.cs",
-              "RelativeToolTip": "Dominio\\Dtos\\ProdutoDto\\ProdutoUpdateRequest.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T18:48:50.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RepositoryBase.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Infra\\Repository\\RepositoryBase.cs",
-              "RelativeDocumentMoniker": "Infra\\Repository\\RepositoryBase.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Infra\\Repository\\RepositoryBase.cs",
-              "RelativeToolTip": "Infra\\Repository\\RepositoryBase.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T18:20:54.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProdutoRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dtos\\ProdutoDto\\ProdutoRequest.cs",
-              "RelativeDocumentMoniker": "Dominio\\Dtos\\ProdutoDto\\ProdutoRequest.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dtos\\ProdutoDto\\ProdutoRequest.cs",
-              "RelativeToolTip": "Dominio\\Dtos\\ProdutoDto\\ProdutoRequest.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T14:10:57.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProdutosController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\Controllers\\ProdutosController.cs",
-              "RelativeDocumentMoniker": "CatalogoApi\\Controllers\\ProdutosController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\Controllers\\ProdutosController.cs",
-              "RelativeToolTip": "CatalogoApi\\Controllers\\ProdutosController.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T19:16:23.233Z",
+              "WhenOpened": "2024-07-03T18:52:56.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CategoriasController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\Controllers\\CategoriasController.cs",
-              "RelativeDocumentMoniker": "CatalogoApi\\Controllers\\CategoriasController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\Controllers\\CategoriasController.cs",
-              "RelativeToolTip": "CatalogoApi\\Controllers\\CategoriasController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAAC8AAABEAAAA",
+              "Title": "IProdutoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Interfaces\\IProdutoRepository.cs",
+              "RelativeDocumentMoniker": "Dominio\\Interfaces\\IProdutoRepository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Interfaces\\IProdutoRepository.cs",
+              "RelativeToolTip": "Dominio\\Interfaces\\IProdutoRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T15:05:30.453Z"
+              "WhenOpened": "2024-07-08T14:14:25.193Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -137,9 +151,34 @@
               "RelativeDocumentMoniker": "CatalogoApi\\appsettings.json",
               "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\appsettings.json",
               "RelativeToolTip": "CatalogoApi\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-26T12:44:18.574Z"
+              "WhenOpened": "2024-06-26T12:44:18.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Infra\\Repository\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "Infra\\Repository\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Infra\\Repository\\RepositoryBase.cs",
+              "RelativeToolTip": "Infra\\Repository\\RepositoryBase.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:20:54.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Modelos\\Produto.cs",
+              "RelativeDocumentMoniker": "Dominio\\Modelos\\Produto.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Cursos de Programa\u00E7\u00E3o\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Modelos\\Produto.cs",
+              "RelativeToolTip": "Dominio\\Modelos\\Produto.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:56:37.847Z"
             }
           ]
         }

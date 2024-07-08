@@ -1,14 +1,9 @@
 ﻿using AutoMapper;
-using Azure;
 using Dominio.Dtos.ProdutoDto;
 using Dominio.Interfaces;
 using Dominio.Modelos.Produtos;
-using Infraestrutura.Data;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Data;
 
 namespace CatalogoApi.Controllers
 {

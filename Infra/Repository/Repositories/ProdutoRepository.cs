@@ -18,7 +18,7 @@ namespace Infraestrutura.Repository.Repositories
 
         public async Task<IEnumerable<Produto>> GetProdutosPorCategoria(string nome)
         {
-            return await _context.Produtos.Where(c => c.Categoria.Nome.ToUpper() == nome.ToUpper()).Include(c => c.Categoria).ToListAsync();
+            return await _context.Produtos.Where(c => c.Categoria.Nome.ToUpper().Contains( nome.ToUpper())).Include(c => c.Categoria).ToListAsync();
         }
 
         public async Task<IEnumerable<Produto>> GetProdutoPaginado(ProdutoPaginado produtoPaginado)
@@ -34,7 +34,9 @@ namespace Infraestrutura.Repository.Repositories
 
         public async Task<IEnumerable<Produto>> GetProdutoPorPreco(ProdutoPorPreco produtoPorPreco)
         {
-            var produtos =  _context.Produtos.Skip((produtoPorPreco.PageNumber - 1) * produtoPorPreco.PageSize)
+            var consulta = await GetAll();
+
+            var produtos = consulta.Skip((produtoPorPreco.PageNumber - 1) * produtoPorPreco.PageSize)
                 .Take(produtoPorPreco.PageSize).AsQueryable();
                 
 
