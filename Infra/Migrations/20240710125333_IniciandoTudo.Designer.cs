@@ -12,20 +12,20 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infraestrutura.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20240621003018_MigrationInicial")]
-    partial class MigrationInicial
+    [Migration("20240710125333_IniciandoTudo")]
+    partial class IniciandoTudo
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.6")
+                .HasAnnotation("ProductVersion", "8.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Dominio.Modelos.Categoria", b =>
+            modelBuilder.Entity("Dominio.Modelos.Categorias.Categoria", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -34,10 +34,14 @@ namespace Infraestrutura.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("ImagemUrl")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("VARCHAR");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("VARCHAR");
 
                     b.HasKey("Id")
                         .HasName("CategoriaId");
@@ -45,7 +49,7 @@ namespace Infraestrutura.Migrations
                     b.ToTable("Categorias", (string)null);
                 });
 
-            modelBuilder.Entity("Dominio.Modelos.Produto", b =>
+            modelBuilder.Entity("Dominio.Modelos.Produtos.Produto", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -56,11 +60,13 @@ namespace Infraestrutura.Migrations
                     b.Property<int>("CategoriaId")
                         .HasColumnType("int");
 
-                    b.Property<DateOnly>("DataCadastro")
-                        .HasColumnType("date");
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("VARCHAR");
 
                     b.Property<float>("Estoque")
                         .HasColumnType("real");
@@ -69,7 +75,9 @@ namespace Infraestrutura.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("VARCHAR");
 
                     b.Property<double>("Preco")
                         .HasColumnType("float");
@@ -82,9 +90,9 @@ namespace Infraestrutura.Migrations
                     b.ToTable("Produtos", (string)null);
                 });
 
-            modelBuilder.Entity("Dominio.Modelos.Produto", b =>
+            modelBuilder.Entity("Dominio.Modelos.Produtos.Produto", b =>
                 {
-                    b.HasOne("Dominio.Modelos.Categoria", "Categoria")
+                    b.HasOne("Dominio.Modelos.Categorias.Categoria", "Categoria")
                         .WithMany("Produtos")
                         .HasForeignKey("CategoriaId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -93,7 +101,7 @@ namespace Infraestrutura.Migrations
                     b.Navigation("Categoria");
                 });
 
-            modelBuilder.Entity("Dominio.Modelos.Categoria", b =>
+            modelBuilder.Entity("Dominio.Modelos.Categorias.Categoria", b =>
                 {
                     b.Navigation("Produtos");
                 });

@@ -17,12 +17,12 @@ namespace Infraestrutura.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.6")
+                .HasAnnotation("ProductVersion", "8.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Dominio.Modelos.Categoria", b =>
+            modelBuilder.Entity("Dominio.Modelos.Categorias.Categoria", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -46,7 +46,7 @@ namespace Infraestrutura.Migrations
                     b.ToTable("Categorias", (string)null);
                 });
 
-            modelBuilder.Entity("Dominio.Modelos.Produto", b =>
+            modelBuilder.Entity("Dominio.Modelos.Produtos.Produto", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -87,9 +87,9 @@ namespace Infraestrutura.Migrations
                     b.ToTable("Produtos", (string)null);
                 });
 
-            modelBuilder.Entity("Dominio.Modelos.Produto", b =>
+            modelBuilder.Entity("Dominio.Modelos.Produtos.Produto", b =>
                 {
-                    b.HasOne("Dominio.Modelos.Categoria", "Categoria")
+                    b.HasOne("Dominio.Modelos.Categorias.Categoria", "Categoria")
                         .WithMany("Produtos")
                         .HasForeignKey("CategoriaId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -98,7 +98,7 @@ namespace Infraestrutura.Migrations
                     b.Navigation("Categoria");
                 });
 
-            modelBuilder.Entity("Dominio.Modelos.Categoria", b =>
+            modelBuilder.Entity("Dominio.Modelos.Categorias.Categoria", b =>
                 {
                     b.Navigation("Produtos");
                 });

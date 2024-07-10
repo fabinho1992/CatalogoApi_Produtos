@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Infraestrutura.Migrations
 {
     /// <inheritdoc />
-    public partial class MigrationInicial : Migration
+    public partial class IniciandoTudo : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,8 +17,8 @@ namespace Infraestrutura.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ImagemUrl = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Nome = table.Column<string>(type: "VARCHAR(50)", maxLength: 50, nullable: false),
+                    ImagemUrl = table.Column<string>(type: "VARCHAR(300)", maxLength: 300, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -31,12 +31,12 @@ namespace Infraestrutura.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nome = table.Column<string>(type: "VARCHAR(50)", maxLength: 50, nullable: false),
                     Preco = table.Column<double>(type: "float", nullable: false),
-                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Descricao = table.Column<string>(type: "VARCHAR(150)", maxLength: 150, nullable: false),
                     Estoque = table.Column<float>(type: "real", nullable: false),
                     ImagemUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DataCadastro = table.Column<DateOnly>(type: "date", nullable: false),
+                    DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CategoriaId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

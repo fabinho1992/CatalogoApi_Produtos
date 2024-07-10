@@ -1,6 +1,8 @@
 ﻿using Dominio.Modelos.Categorias;
 using Dominio.Modelos.Produtos;
 using Infraestrutura.Mapeamento;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -21,6 +23,7 @@ namespace Infraestrutura.Data
         {
             modelBuilder.ApplyConfiguration(new CategoriaMaps());
             modelBuilder.ApplyConfiguration(new ProdutoMaps());
+
         }
     }
 }

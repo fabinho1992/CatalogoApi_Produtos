@@ -35,3 +35,16 @@ C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\Catalog
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Servicos\bin\Debug\net8.0\Dominio.pdb
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Servicos\bin\Debug\net8.0\Infraestrutura.pdb
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Servicos\obj\Debug\net8.0\Servicos.csproj.Up2Date
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\CatalogoApi.deps.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\CatalogoApi.runtimeconfig.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\appsettings.Development.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\appsettings.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\CatalogoApi.exe
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\CatalogoApi.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\Dominio.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\Infraestrutura.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\CatalogoApi.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\Dominio.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\bin\Debug\net8.0\Infraestrutura.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\obj\Debug\net8.0\Servicos.csproj.AssemblyReference.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Servicos\obj\Debug\net8.0\Servicos.csproj.CopyComplete

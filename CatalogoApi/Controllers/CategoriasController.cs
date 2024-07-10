@@ -6,6 +6,7 @@ using Dominio.Interfaces.Generic;
 using Dominio.Modelos.Categorias;
 using Dominio.Modelos.Produtos;
 using Infraestrutura.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -47,6 +48,7 @@ namespace CatalogoApi.Controllers
         }
 
         [HttpGet]
+        
         public async Task<ActionResult<IEnumerable<CategoriaResponse>>> GetAll()
         {
             try
