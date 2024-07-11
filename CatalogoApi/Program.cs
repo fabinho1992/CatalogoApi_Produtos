@@ -5,6 +5,7 @@ using CatalogoApi.ExtensaoErros.Filtros;
 using CatalogoApi.Repository;
 using Dominio.Interfaces;
 using Dominio.Interfaces.Generic;
+using Dominio.Services.Token;
 using Infraestrutura.Data;
 using Infraestrutura.IdentityModel;
 using Infraestrutura.Profiles.CategoriasProfile;
@@ -77,6 +78,7 @@ builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(RepositoryBase<>));
 builder.Services.AddScoped<IUnitToWork, UnitToWork>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 
 //AutoMapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
