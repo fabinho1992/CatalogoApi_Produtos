@@ -15,13 +15,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using System.Text;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers(opt =>
 {
     opt.Filters.Add(typeof(ApiExceptionFilter));
@@ -29,12 +29,46 @@ builder.Services.AddControllers(opt =>
     .AddJsonOptions(op => op.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles)
     .AddNewtonsoftJson();
 
-
-
-
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c => {
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Barbearia", Version = "v1" });
+
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "JWT Authorization header using the Bearer scheme."
+    });
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                          new OpenApiSecurityScheme
+                          {
+                              Reference = new OpenApiReference
+                              {
+                                  Type = ReferenceType.SecurityScheme,
+                                  Id = "Bearer"
+                              }
+                          },
+                         new string[] {}
+                    }
+                });
+});
+
+
+//DbContext
+var stringConexao = builder.Configuration.GetConnectionString("StringDefault");
+builder.Services.AddDbContext<ApiDbContext>(opt => opt.UseSqlServer(stringConexao));
+builder.Services.AddDbContext<ApiDbContextIdentity>(opt => opt.UseSqlServer(stringConexao));
+
+//Identity
+builder.Services.AddIdentity<AppUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApiDbContextIdentity>()
+    .AddDefaultTokenProviders();
 
 //Jwt Token
 var secretKey = builder.Configuration["Jwt:SecretKey"] ?? throw new ArgumentException("Invalid secret Key ..");
@@ -46,7 +80,7 @@ builder.Services.AddAuthentication(opt =>
 }).AddJwtBearer(opt =>
 {
     opt.SaveToken = true; // salvar o token
-    opt.RequireHttpsMetadata = false; // se é preciso https para transmitir o token , em produçao é true
+    opt.RequireHttpsMetadata = true; // se é preciso https para transmitir o token , em produçao é true
     opt.TokenValidationParameters = new TokenValidationParameters()
     {
         ValidateIssuer = true,
@@ -62,23 +96,14 @@ builder.Services.AddAuthentication(opt =>
 });
 
 
-//DbContext
-var stringConexao = builder.Configuration.GetConnectionString("StringDefault");
-builder.Services.AddDbContext<ApiDbContext>(opt => opt.UseSqlServer(stringConexao));
-builder.Services.AddDbContext<ApiDbContextIdentity>(opt => opt.UseSqlServer(stringConexao));
-
-//Identity
-builder.Services.AddIdentity<AppUser, IdentityRole>()
-    .AddEntityFrameworkStores<ApiDbContextIdentity>()
-    .AddDefaultTokenProviders();
-
-
 //Inje��o de depend�ncia
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(RepositoryBase<>));
 builder.Services.AddScoped<IUnitToWork, UnitToWork>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+
+
 
 //AutoMapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -91,12 +116,13 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    app.ConfigureExceptionHandler();
+    //app.ConfigureExceptionHandler();
 }
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+
+app.UseAuthorization();     
 
 app.MapControllers();
 
