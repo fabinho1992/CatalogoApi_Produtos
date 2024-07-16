@@ -9,7 +9,9 @@ namespace Infraestrutura.IdentityModel
 {
     public class AppUser : IdentityUser
     {
+
         public string? Refresh { get; set; }
         public DateTime RefreshTokenExpiryTime { get; set; }
+       
     }
 }

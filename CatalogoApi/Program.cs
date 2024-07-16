@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Security.Claims;
 using System.Text;
 using System.Text.Json.Serialization;
 
@@ -59,7 +60,6 @@ builder.Services.AddSwaggerGen(c => {
                 });
 });
 
-
 //DbContext
 var stringConexao = builder.Configuration.GetConnectionString("StringDefault");
 builder.Services.AddDbContext<ApiDbContext>(opt => opt.UseSqlServer(stringConexao));
@@ -94,6 +94,21 @@ builder.Services.AddAuthentication(opt =>
 
     };
 });
+
+//Politicas que serão usadas para acessar os endpoints
+builder.Services.AddAuthorization(opt =>
+{
+    opt.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
+
+    opt.AddPolicy("SuperAdminOnly", policy => policy.RequireClaim("id", "fabio"));
+
+    opt.AddPolicy("UserOnly", policy => policy.RequireRole("User"));
+
+    opt.AddPolicy("ExcuisivePolicyOnly", policy => policy.RequireAssertion(contex => contex.User
+                                                .HasClaim(claim => claim.Type == "id" && claim.Value == "fabio"
+                                                      || contex.User.IsInRole("SuperAdmin"))));
+}
+);
 
 
 //Inje��o de depend�ncia

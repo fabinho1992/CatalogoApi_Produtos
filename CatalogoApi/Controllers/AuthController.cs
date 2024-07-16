@@ -1,4 +1,5 @@
 ﻿using Dominio.Services.Token;
+using Infraestrutura.Data;
 using Infraestrutura.IdentityModel;
 using Infraestrutura.IdentityModel.Dtos;
 using Microsoft.AspNetCore.Authorization;
@@ -18,17 +19,68 @@ namespace CatalogoApi.Controllers
         private readonly ITokenService _tokenService;
         private readonly UserManager<AppUser> _userManager;
         private readonly IConfiguration _configuration;
-        
+        private readonly RoleManager<IdentityRole> _roleManager;
+
 
         public AuthController(ITokenService tokenService,
                     UserManager<AppUser> userManager,
-                        IConfiguration configuration)
+                        IConfiguration configuration,
+                        RoleManager<IdentityRole> roleManager)
         {
             _tokenService = tokenService;
             _userManager = userManager;
             _configuration = configuration;
-           
+            _roleManager = roleManager;
         }
+
+        [HttpPost("createRole")]
+        public async Task<IActionResult> CreateRole(string roleName)
+        {
+            var roleExiste = await _roleManager.RoleExistsAsync(roleName);
+            if(!roleExiste)
+            {
+                var role = await _roleManager.CreateAsync(new IdentityRole(roleName));
+
+                if(role.Succeeded)
+                {
+                    return StatusCode(StatusCodes.Status201Created,
+                        new Response { Status = "Success", Message = $"Role {roleName} created successfully!" });
+                }
+                else
+                {
+                    return StatusCode(StatusCodes.Status400BadRequest,
+                        new Response { Status = "Erro", Message = "Error creating role.." });
+                }
+            }
+
+            return StatusCode(StatusCodes.Status400BadRequest, 
+                  new Response { Status = "Erro", Message = "role already exists" });
+        }
+
+        [HttpPost("AddUserToRole")]
+        public async Task<IActionResult> AddUserToRole(string userEmail, string roleName)
+        {
+            var user = await _userManager.FindByEmailAsync(userEmail);
+
+            if(user is not null)
+            {
+                var addRole = await _userManager.AddToRoleAsync(user, roleName);
+
+                if (addRole.Succeeded)
+                {
+                    return StatusCode(StatusCodes.Status200OK,
+                        new Response { Status = "Success", Message = $"user {user.Email} added to role {roleName} successfully" });
+                }
+                else
+                {
+                    return StatusCode(StatusCodes.Status400BadRequest,
+                        new Response { Status = "Erro", Message = "error adding user to role.." });
+                }
+            }
+            return StatusCode(StatusCodes.Status400BadRequest,
+                new Response { Status = "Erro", Message = $"User {userEmail} not found.."});
+        }
+
 
         [HttpPost]
         [Route("login")]
@@ -45,6 +97,7 @@ namespace CatalogoApi.Controllers
                 {
                     new Claim(ClaimTypes.Name, usuario.UserName!),
                     new Claim(ClaimTypes.Email, usuario.Email!),
+                    new Claim("id", usuario.UserName!),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
                 };
 

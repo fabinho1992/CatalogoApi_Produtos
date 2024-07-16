@@ -27,6 +27,7 @@ namespace CatalogoApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Policy = "UserOnly")]
         public async Task<ActionResult> Create(CategoriaRequest categoria)
         {
             try
@@ -121,6 +122,7 @@ namespace CatalogoApi.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize(Policy = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var categoria = await _repository.CategoriaRepository.Get(c => c.Id == id);
@@ -129,7 +131,7 @@ namespace CatalogoApi.Controllers
                 return NotFound("Categoria não encontrado....");
             } 
 
-            await _repository.CategoriaRepository.Delete(categoria);
+            await _repository.CategoriaRepository.Delete(categoria);    
             await _repository.Commit();
             return Ok("Categoria excluída!");
         }
