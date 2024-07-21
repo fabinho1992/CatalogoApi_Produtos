@@ -48,7 +48,7 @@ namespace CatalogoApi.Controllers
             }
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoriaResponse>>> GetAll()
         {
@@ -68,7 +68,7 @@ namespace CatalogoApi.Controllers
             }
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpGet("{id:int}")]
         public async Task<ActionResult> GetById(int id)
         {

@@ -9,6 +9,7 @@ namespace CatalogoApi.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    //[ApiExplorerSettings(IgnoreApi = true)]
     public class ProdutosController : ControllerBase
     {
         private readonly IUnitToWork _repository;

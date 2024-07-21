@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\CatalogoApi\\CatalogoApi.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\CatalogoApi.csproj": {}
   },
   "projects": {
-    "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\CatalogoApi\\CatalogoApi.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\CatalogoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\CatalogoApi\\CatalogoApi.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\CatalogoApi.csproj",
         "projectName": "CatalogoApi",
-        "projectPath": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\CatalogoApi\\CatalogoApi.csproj",
-        "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\CatalogoApi\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\CatalogoApi.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\CatalogoApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Infra\\Infraestrutura.csproj": {
-                "projectPath": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Infra\\Infraestrutura.csproj"
+              "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Infra\\Infraestrutura.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Infra\\Infraestrutura.csproj"
               }
             }
           }
@@ -42,12 +43,25 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Asp.Versioning.Http": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
@@ -98,24 +112,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -124,6 +138,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -136,12 +151,25 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Asp.Versioning.Http": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
@@ -179,24 +207,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Infra\\Infraestrutura.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Infra\\Infraestrutura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Infra\\Infraestrutura.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Infra\\Infraestrutura.csproj",
         "projectName": "Infraestrutura",
-        "projectPath": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Infra\\Infraestrutura.csproj",
-        "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Infra\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Infra\\Infraestrutura.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -205,14 +233,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\AulasAluraBackEnd\\Cursos_Udemy\\CursoEssencialWebApi\\CatalogoApi\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\CursosUdemy\\CatalogoApi\\CatalogoApi_Produtos\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -221,12 +250,25 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Asp.Versioning.Http": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
@@ -278,7 +320,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Testando Cors</title>
+</head>
+<body>
+    <h1>Testa Cors</h1>
+    <div>
+        <button onclick="Teste1()">Get Lista</button>
+        <br /><br />
+        <button onclick="Teste2()">Get por Id</button>
+    </div>
+    <script>
+        function Teste1() {
+            fetch('https://localhost:7065/categorias')
+            .then(response => response.json())
+            .then(data => console.log(data))
+                .catch(error => console.error('Erro na solicitação', error)));
+        }
+
+        function Teste2(){
+
+        }
+    </script>
+</body>
+</html>

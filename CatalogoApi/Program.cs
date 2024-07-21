@@ -1,6 +1,7 @@
 
 
 using APICatalogo.Extensions;
+using Asp.Versioning;
 using CatalogoApi.ExtensaoErros.Filtros;
 using CatalogoApi.Repository;
 using Dominio.Interfaces;
@@ -14,8 +15,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Reflection;
 using System.Security.Claims;
 using System.Text;
 using System.Text.Json.Serialization;
@@ -30,10 +34,34 @@ builder.Services.AddControllers(opt =>
     .AddJsonOptions(op => op.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles)
     .AddNewtonsoftJson();
 
+//configuração CORS // aqui estou configurando para qualquer origem
+builder.Services.AddCors(opt =>
+    opt.AddPolicy("AcessoCors", policy =>
+    {
+        policy.WithOrigins("https://localhost:7056")
+        .AllowAnyMethod()
+        .AllowCredentials()
+        .AllowAnyHeader();
+    }));
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Barbearia", Version = "v1" });
+    //c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Barbearia", Version = "v1" });
+
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "V1",
+        Title = "Catalogo API",
+        Description = "Catalogo de Produtos e Categorias",
+        Contact = new OpenApiContact
+        {
+            Name = "Fabio dos Santos",
+            Email = "f.santosdev1992@gmail.com",
+            Url = new Uri ("https://www.linkedin.com/in/f%C3%A1bio-dos-santos-518612275/")
+        }
+
+    });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
     {
@@ -45,20 +73,26 @@ builder.Services.AddSwaggerGen(c => {
         Description = "JWT Authorization header using the Bearer scheme."
     });
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
-                {
-                    {
-                          new OpenApiSecurityScheme
-                          {
-                              Reference = new OpenApiReference
-                              {
-                                  Type = ReferenceType.SecurityScheme,
-                                  Id = "Bearer"
-                              }
-                          },
-                         new string[] {}
-                    }
-                });
+    {
+       {
+          new OpenApiSecurityScheme
+          {
+              Reference = new OpenApiReference
+               {
+                Type = ReferenceType.SecurityScheme,
+                Id = "Bearer"
+               }
+           },
+               new string[] {}
+       }
+    });
+    //incluindo comentario XML
+    //nome:
+    var xmlFileName = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFileName));
+
 });
+
 
 //DbContext
 var stringConexao = builder.Configuration.GetConnectionString("StringDefault");
@@ -110,6 +144,21 @@ builder.Services.AddAuthorization(opt =>
 }
 );
 
+//Configuração de versionamento "Query String"
+builder.Services.AddApiVersioning(o =>
+{
+    o.DefaultApiVersion = new ApiVersion(1, 0);// aqui a versão padão será a 1.0
+    o.AssumeDefaultVersionWhenUnspecified = true;// se nenhuma versão for passada , a padrão será utilizada
+    o.ReportApiVersions = true;// versões da api são incluidas no cabeçalho da response
+    o.ApiVersionReader = ApiVersionReader.Combine(
+                               new QueryStringApiVersionReader(),//padrão query string
+                               new UrlSegmentApiVersionReader());//padrão url 
+}).AddApiExplorer(options =>
+{
+    options.GroupNameFormat = "'v'VVV";// configurando o formato
+    options.SubstituteApiVersionInUrl = true;
+});
+
 
 //Inje��o de depend�ncia
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
@@ -135,8 +184,10 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
 
-
+app.UseCors("AcessoCors");
 app.UseAuthorization();     
 
 app.MapControllers();
