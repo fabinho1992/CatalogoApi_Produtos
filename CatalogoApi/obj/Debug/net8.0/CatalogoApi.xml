@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CatalogoApi</name>
+    </assembly>
+    <members>
+        <member name="M:CatalogoApi.Controllers.AuthController.Login(Infraestrutura.IdentityModel.Dtos.LoginDto)">
+            <summary>
+            Verifica as credenciais do usuario
+            </summary>
+            <param name="loginDto"> objeto loginDto</param>
+            <returns> Status code 200 e Token de acesso do usuario</returns>
+        </member>
+        <member name="M:CatalogoApi.Controllers.CategoriasController.GetAll">
+            <summary>
+            Obtem uma lista de objetos Categorias
+            </summary>
+            <returns> Uma lista de objetos Categorias </returns>
+        </member>
+    </members>
+</doc>

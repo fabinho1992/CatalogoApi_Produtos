@@ -1,20 +1,3 @@
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Infraestrutura.deps.json
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Infraestrutura.runtimeconfig.json
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Infraestrutura.dll
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Infraestrutura.pdb
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Dominio.dll
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Dominio.pdb
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.csproj.AssemblyReference.cache
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.GeneratedMSBuildEditorConfig.editorconfig
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.AssemblyInfoInputs.cache
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.AssemblyInfo.cs
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.csproj.CoreCompileInputs.cache
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.csproj.CopyComplete
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.dll
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\refint\Infraestrutura.dll
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.pdb
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.genruntimeconfig.cache
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\ref\Infraestrutura.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\bin\Debug\net8.0\Infraestrutura.deps.json
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\bin\Debug\net8.0\Infraestrutura.runtimeconfig.json
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\bin\Debug\net8.0\Infraestrutura.dll
@@ -33,4 +16,21 @@ C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\Catalog
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraestrutura.pdb
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\Infraestrutura.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Infra\obj\Debug\net8.0\ref\Infraestrutura.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Infraestrutura.deps.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Infraestrutura.runtimeconfig.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Infraestrutura.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Infraestrutura.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Dominio.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\bin\Debug\net8.0\Dominio.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.csproj.AssemblyReference.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.GeneratedMSBuildEditorConfig.editorconfig
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.AssemblyInfoInputs.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.AssemblyInfo.cs
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.csproj.CoreCompileInputs.cache
 C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.sourcelink.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.csproj.CopyComplete
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\refint\Infraestrutura.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\Infraestrutura.genruntimeconfig.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Infra\obj\Debug\net8.0\ref\Infraestrutura.dll

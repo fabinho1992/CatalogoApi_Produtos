@@ -9,6 +9,7 @@ namespace CatalogoApi.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [ApiConventionType(typeof(DefaultApiConventions))]// padronização dos tipos de respostas que tenho no swagger
     //[ApiExplorerSettings(IgnoreApi = true)]
     public class ProdutosController : ControllerBase
     {

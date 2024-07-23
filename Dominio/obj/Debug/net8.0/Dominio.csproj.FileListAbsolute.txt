@@ -1,14 +1,3 @@
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\bin\Debug\net8.0\Dominio.deps.json
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\bin\Debug\net8.0\Dominio.dll
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\bin\Debug\net8.0\Dominio.pdb
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.AssemblyInfoInputs.cache
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.AssemblyInfo.cs
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.csproj.CoreCompileInputs.cache
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.dll
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\refint\Dominio.dll
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.pdb
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\ref\Dominio.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Dominio\bin\Debug\net8.0\Dominio.deps.json
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Dominio\bin\Debug\net8.0\Dominio.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Dominio\bin\Debug\net8.0\Dominio.pdb
@@ -21,6 +10,17 @@ C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\Catalog
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Dominio\obj\Debug\net8.0\refint\Dominio.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Dominio\obj\Debug\net8.0\Dominio.pdb
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Dominio\obj\Debug\net8.0\ref\Dominio.dll
-C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.sourcelink.json
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Dominio\obj\Debug\net8.0\Dominio.csproj.AssemblyReference.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\bin\Debug\net8.0\Dominio.deps.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\bin\Debug\net8.0\Dominio.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\bin\Debug\net8.0\Dominio.pdb
 C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.csproj.AssemblyReference.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.AssemblyInfoInputs.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.AssemblyInfo.cs
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.csproj.CoreCompileInputs.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.sourcelink.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\refint\Dominio.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\Dominio.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\Dominio\obj\Debug\net8.0\ref\Dominio.dll

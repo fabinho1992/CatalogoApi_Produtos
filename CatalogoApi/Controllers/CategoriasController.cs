@@ -27,7 +27,10 @@ namespace CatalogoApi.Controllers
         }
 
         [HttpPost]
-        [Authorize(Policy = "UserOnly")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [Produces("application/json")]
+        //[Authorize(Policy = "UserOnly")]
         public async Task<ActionResult> Create(CategoriaRequest categoria)
         {
             try
@@ -40,7 +43,7 @@ namespace CatalogoApi.Controllers
                 var categoriaDto = _mapper.Map<Categoria>(categoria);
                 await _repository.CategoriaRepository.Create(categoriaDto);
                 await _repository.Commit();
-                return Ok(categoria);
+                return Created();
             }
             catch (Exception)
             {
@@ -48,6 +51,10 @@ namespace CatalogoApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Obtem uma lista de objetos Categorias
+        /// </summary>
+        /// <returns> Uma lista de objetos Categorias </returns>
         //[Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoriaResponse>>> GetAll()
@@ -109,6 +116,7 @@ namespace CatalogoApi.Controllers
         }
 
         [HttpPut("{id:int}")]
+        [ApiConventionMethod(typeof(DefaultApiConventions),nameof(DefaultApiConventions.Put))]
         public async Task<ActionResult> UpdateAsync(int id, Categoria request)
         {
             if(id != request.Id)

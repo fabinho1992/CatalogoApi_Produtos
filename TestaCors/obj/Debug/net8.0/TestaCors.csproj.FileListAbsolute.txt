@@ -36,3 +36,41 @@ C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\Catalog
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\TestaCors\obj\Debug\net8.0\TestaCors.csproj.AssemblyReference.cache
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\TestaCors\obj\Debug\net8.0\TestaCors.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\TestaCors\obj\Debug\net8.0\TestaCors.csproj.Up2Date
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\bin\Debug\net8.0\appsettings.Development.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\bin\Debug\net8.0\appsettings.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\bin\Debug\net8.0\TestaCors.staticwebassets.runtime.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\bin\Debug\net8.0\TestaCors.exe
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\bin\Debug\net8.0\TestaCors.deps.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\bin\Debug\net8.0\TestaCors.runtimeconfig.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\bin\Debug\net8.0\TestaCors.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\bin\Debug\net8.0\TestaCors.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\bin\Debug\net8.0\Asp.Versioning.Http.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.csproj.AssemblyReference.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.GeneratedMSBuildEditorConfig.editorconfig
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.AssemblyInfoInputs.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.AssemblyInfo.cs
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.csproj.CoreCompileInputs.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.MvcApplicationPartsAssemblyInfo.cs
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.MvcApplicationPartsAssemblyInfo.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.RazorAssemblyInfo.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.RazorAssemblyInfo.cs
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.sourcelink.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\staticwebassets.build.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\staticwebassets.development.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\staticwebassets\msbuild.TestaCors.Microsoft.AspNetCore.StaticWebAssets.props
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\staticwebassets\msbuild.build.TestaCors.props
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TestaCors.props
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TestaCors.props
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\staticwebassets.pack.json
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\scopedcss\bundle\TestaCors.styles.css
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\scopedcss\projectbundle\TestaCors.bundle.scp.css
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.csproj.CopyComplete
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\refint\TestaCors.dll
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.pdb
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\TestaCors.genruntimeconfig.cache
+C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\TestaCors\obj\Debug\net8.0\ref\TestaCors.dll

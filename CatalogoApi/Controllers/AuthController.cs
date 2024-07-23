@@ -81,7 +81,11 @@ namespace CatalogoApi.Controllers
                 new Response { Status = "Erro", Message = $"User {userEmail} not found.."});
         }
 
-
+        /// <summary>
+        /// Verifica as credenciais do usuario
+        /// </summary>
+        /// <param name="loginDto"> objeto loginDto</param>
+        /// <returns> Status code 200 e Token de acesso do usuario</returns>
         [HttpPost]
         [Route("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
