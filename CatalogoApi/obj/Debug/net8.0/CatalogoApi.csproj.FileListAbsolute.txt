@@ -179,7 +179,6 @@ C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\Catalog
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\Asp.Versioning.Http.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
@@ -316,3 +315,5 @@ C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\CatalogoApi\b
 C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\CatalogoApi\obj\Debug\net8.0\CatalogoApi.csproj.CopyComplete
 C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\CatalogoApi\obj\Debug\net8.0\CatalogoApi.genruntimeconfig.cache
 C:\AulasAluraBackEnd\Cursos_Udemy\CursoEssencialWebApi\CatalogoApi\CatalogoApi\obj\Debug\net8.0\ref\CatalogoApi.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\bin\Debug\net8.0\CatalogoApi.xml
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\CatalogoApi\obj\Debug\net8.0\CatalogoApi.xml

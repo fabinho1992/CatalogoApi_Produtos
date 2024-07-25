@@ -17,6 +17,7 @@ namespace Infraestrutura.Profiles.ProdutoProfile
             CreateMap<Produto, ProdutoResponse>().ReverseMap();
             CreateMap<Produto, ProdutoResponsePorCategoria>().ForMember(p => p.NomeCategoria, opt => opt.MapFrom(c => c.Categoria.Nome)).ReverseMap();
             CreateMap<Produto, ProdutoUpdateRequest>().ReverseMap();
+            CreateMap<Produto, ProdutoPutDto>().ReverseMap();
         }
     }
 }

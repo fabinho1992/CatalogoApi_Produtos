@@ -9,7 +9,7 @@ namespace CatalogoApi.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    [ApiConventionType(typeof(DefaultApiConventions))]// padronização dos tipos de respostas que tenho no swagger
+    //[ApiConventionType(typeof(DefaultApiConventions))]// padronização dos tipos de respostas que tenho no swagger
     //[ApiExplorerSettings(IgnoreApi = true)]
     public class ProdutosController : ControllerBase
     {
@@ -22,6 +22,9 @@ namespace CatalogoApi.Controllers
             _mapper = mapper;
         }
 
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpPost]
         public async Task<IActionResult> Create(ProdutoRequest produto)
         {
@@ -32,10 +35,10 @@ namespace CatalogoApi.Controllers
                     return BadRequest();
                 }
 
-                var produtoDto = _mapper.Map<Produto>(produto);
-                await _repository.ProdutoRepository.Create(produtoDto);
+                var novoProduto = _mapper.Map<Produto>(produto);
+                await _repository.ProdutoRepository.Create(novoProduto);
                 await _repository.Commit();
-                return Ok(produto);
+                return new CreatedAtRouteResult("GetById", new { id = novoProduto.Id}, novoProduto);
             }
             catch (Exception)
             {
@@ -43,8 +46,11 @@ namespace CatalogoApi.Controllers
             }
         }
 
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Produto>>> GetAll()
+        public async Task<ActionResult<IEnumerable<ProdutoResponse>>> GetAll()
         {
             try
             {
@@ -53,8 +59,8 @@ namespace CatalogoApi.Controllers
                 {
                     return NotFound("Produtos não encontrados..");
                 }
-
-                return Ok(produtos);
+                var produtosDto = _mapper.Map <IEnumerable<ProdutoResponse>>(produtos);
+                return Ok(produtosDto);
             }
             catch (Exception)
             {
@@ -63,9 +69,17 @@ namespace CatalogoApi.Controllers
 
         }
 
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<ProdutoResponse>> GetById(int id)
+        public async Task<ActionResult<ProdutoResponse>> GetById(int? id)
         {
+            if(id is null || id <= 0)
+            {
+                return BadRequest("Coloque um Id maior que 0");
+            }
+
             try
             {
                 var produto = await _repository.ProdutoRepository.Get(p => p.Id == id);
@@ -123,18 +137,20 @@ namespace CatalogoApi.Controllers
             return Ok(produtosDto);
         }
 
-
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPut("{id:int:min(1)}")]//faço um filtro no parametro, que só pode receber no minímo um número 1
-        public async Task<IActionResult> Update(int id, Produto request)
+        public async Task<ActionResult> Update(int id, ProdutoPutDto request)
         {
             if (id != request.Id) 
             {
                 return BadRequest($"Produto com o id= {id} não encontrado...");
             }
 
-            await _repository.ProdutoRepository.Update(request);
+            var produtoDto = _mapper.Map<Produto>(request);
+            await _repository.ProdutoRepository.Update(produtoDto);
             await _repository.Commit();
-            return Ok(request);
+            return Ok(produtoDto);
         }
 
         [HttpPatch("{id}")]

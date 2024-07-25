@@ -23,3 +23,4 @@ C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\Catalog
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Servicos\bin\Debug\net8.0\Dominio.pdb
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Servicos\bin\Debug\net8.0\Infraestrutura.pdb
 C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Servicos\obj\Debug\net8.0\Servicos.csproj.Up2Date
+C:\Users\Usuario\Desktop\Cursos de Programação\CursosUdemy\CatalogoApi\CatalogoApi_Produtos\Servicos\bin\Debug\net8.0\CatalogoApi.xml
