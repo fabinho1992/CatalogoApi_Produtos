@@ -24,7 +24,7 @@ namespace TesteCatalogoApi.Testes
         public async Task PutProdutos_Return_OkResult()
         {
             //Arrange
-            var prodId = 16;
+            var prodId = 7;
 
             var produto = new ProdutoPutDto
             {
@@ -44,6 +44,30 @@ namespace TesteCatalogoApi.Testes
             data.Should().NotBeNull();
             data.Should().BeOfType<OkObjectResult>();
             
+        }
+
+        [Fact]
+        public async Task PutProdutos_Return_BadRequest()
+        {
+            //Arrange
+            var prodId = 7;
+
+            var produto = new ProdutoPutDto
+            {
+                Id = 1,
+                Nome = "TesteUnit",
+                Descricao = "TesteUnit",
+                Preco = 2,
+                Estoque = 400,
+                ImagemUrl = "TesteUnit.jpg",
+                CategoriaId = 2
+            };
+
+            //Act
+            var data = await _controller.Update(prodId, produto);
+
+            //Assert
+            data.Should().BeOfType<BadRequestObjectResult>().Which.StatusCode.Should().Be(400);
         }
     }
 }

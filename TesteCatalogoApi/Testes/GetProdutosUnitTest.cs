@@ -23,7 +23,7 @@ namespace TesteCatalogoApi.Testes
         public async Task GetProdutoId_Return_OkResult()
         {
             //Arrange
-            int prodId = 2;
+            int prodId = 4;
 
             //Act
             var data = await _controller.GetById(prodId);

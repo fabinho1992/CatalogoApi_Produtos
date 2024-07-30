@@ -19,7 +19,8 @@ namespace TesteCatalogoApi.Testes
         public IMapper _mapper;
         public static DbContextOptions<ApiDbContext> _dbContextOptions { get; }
 
-        public static string connectionString = "Data Source=DESKTOP-13IIORA\\SQLEXPRESS;Initial Catalog=CatalogoAPI;Integrated Security=True;TrustServerCertificate=True;";
+        //public static string connectionString = "Data Source=DESKTOP-13IIORA\\SQLEXPRESS;Initial Catalog=CatalogoAPI;Integrated Security=True;TrustServerCertificate=True;";
+        public static string connectionString = "Data Source=DESKTOP-7JJ4VOJ\\SQLEXPRESS;Initial Catalog=CatalogoAPI;Integrated Security=True;TrustServerCertificate=True;";
 
         static ProdutosUnitTestController()
         {
